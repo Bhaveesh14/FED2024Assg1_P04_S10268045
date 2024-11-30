@@ -7,8 +7,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Makes it full-screen vertically */
-  background: #f9f9f9; /* Light background for readability */
+  min-height: 100vh;
+  background: #f9f9f9;
+  padding: 0 1rem;
 }
 
 /* Navigation Bar */
@@ -21,28 +22,32 @@ header nav {
   display: flex;
   justify-content: center;
   padding: 1rem 0;
+  flex-wrap: wrap; /* Allow the navigation items to wrap on smaller screens */
 }
 
 header nav a {
   color: white;
   text-decoration: none;
   margin: 0 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   transition: color 0.3s;
 }
 
 header nav a:hover {
-  color: #ffd700; /* Highlight on hover */
+  color: #ffd700;
 }
 
 /* Welcome Section */
 main {
   text-align: center;
   padding: 2rem 1rem;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 #welcome h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
@@ -67,7 +72,7 @@ main {
 
 #team blockquote {
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #333;
   margin-top: 1rem;
 }
@@ -79,12 +84,12 @@ main {
 }
 
 #about h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 #about p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #666;
 }
 
@@ -98,19 +103,67 @@ footer {
   width: 100%;
 }
 
+/* Destination Section - Image Hover Effect */
+.destination-grid .card img {
+  transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+  width: 85%;  /* Ensure the image fills the card */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Enlarge Image on Hover */
+.destination-grid .card:hover img {
+  transform: scale(1.1); /* Scale the image by 10% */
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   header nav a {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0 1rem;
   }
 
   #welcome h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   #welcome p,
   #about p {
     font-size: 1rem;
+  }
+
+  #about h2 {
+    font-size: 1.5rem;
+  }
+
+  #team img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Extra Small Screens (Mobile) */
+@media (max-width: 480px) {
+  header nav {
+    flex-direction: column; /* Stack nav items on small screens */
+    align-items: center;
+  }
+
+  header nav a {
+    margin: 0.5rem 0;
+  }
+
+  #welcome h1 {
+    font-size: 1.6rem;
+  }
+
+  #team img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #about p {
+    font-size: 0.9rem;
   }
 }
