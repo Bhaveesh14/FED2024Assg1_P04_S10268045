@@ -44,12 +44,16 @@ Features Left to Implement
 Add a "Gallery" page to display additional travel photos.
 Integrate user reviews for destinations.
 Implement a search feature for destinations.
-Technologies Used
+
+
+Technologies Used:
 HTML5: Structure and semantic layout.
 CSS3: Styling and responsive design.
 JavaScript: Interactive elements (e.g., enlarging images, navigation interactions).
 Normalize.css: Ensures cross-browser consistency by resetting default styles.
-Adobe XD: Used to create initial wireframes for design.
+Figma: Used to create initial wireframes for design.
+
+
 Testing
 Manual Testing
 Navigation:
@@ -62,16 +66,31 @@ Submitted empty forms to ensure error messages appear.
 Tested form submission with valid and invalid inputs.
 Image Scaling:
 Ensured all images resize proportionally on different screen sizes.
+
+
+
+
 Bugs and Issues
 Bug: Destination images didn't scale properly initially.
 Fix: Adjusted CSS using max-width: 100%; and height: auto;.
 Known Issue: On older browsers (e.g., Internet Explorer), certain styles may not render correctly.
+
+
 Credits
+The mount fugi picture: Monkey, S. (2024). Kawaguchiko (Kawaguchi Lake). https://www.snowmonkeyresorts.com/. Retrieved September 17, 2024, from https://www.snowmonkeyresorts.com/wp-content/uploads/2020/07/565944_m-1024x724.jpg. 
+
+The disneyland picture: Japan, L. (2017). Disneyland . livejapan. Retrieved August 9, 2017, from https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000168/img/basic/a0000168_main.jpg. 
+
+
 Content
 Destination descriptions sourced from Wikipedia and other open sources.
+
+
 Media
-Destination images from Unsplash.
-Team image from Pexels.
+Destination images from Monkey, S. (2024) and livejapan .
+Fictional Team image from copilot.
+
+
 Acknowledgements
 Inspiration for this project came from travel blogs like Lonely Planet and National Geographic.
 Special thanks to my tutor for guidance during the project development.
